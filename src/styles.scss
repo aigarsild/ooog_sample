@@ -1,16 +1,22 @@
-body {
-  color: #f5f5f5;
-  background: #080E33;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800&display=swap');
 
-.navbar-light .navbar-brand {
-  color: #f5f5f5;
+@import "~bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables.scss";
+@import "bootstrap/scss/mixins/_breakpoints.scss";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
 }
 
 a {
-  color: #2039CC;
+  color: #000;
 }
 
-.light-section {
-  background: #2039CC;
+.nav-wrap {
+  display: none;
+  
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
 }

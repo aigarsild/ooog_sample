@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from '../about';
 import Home from '../home';
 import Contact from '../contact';
+import Portfolio from '../portfolio';
 
 class Header extends Component {
 
@@ -10,20 +11,23 @@ class Header extends Component {
         return (
 
             <Router>
-                <header className="light-section row navbar-light sticky-top">
+                <header className="row light-section navbar-light sticky-top">
                     <div className="container">
-                        <div className="row">|
-                            <h2 className="col navbar-brand">OOOG.</h2>
-                            <nav className="col">
+                        <div className="row">
+                            <p className="col navbar-brand pb-0 font-weight-bold">OOOG.</p>
+                            <nav className="col nav-wrap">
                                 <ul className="nav justify-content-end">
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">Home</Link>
+                                        <Link className="nav-link" to="/">home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/about">About</Link>
+                                        <Link className="nav-link" to="/about">about</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/contact">Contact</Link>
+                                        <Link className="nav-link" to="/portfolio">how we work</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/contact">contact</Link>
                                     </li>
                                 </ul>
                             </nav>
@@ -31,11 +35,12 @@ class Header extends Component {
                     </div>
                 </header>
 
-                    {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
                     <Switch>
                         <Route path="/about">
                             <About />
+                        </Route>
+                        <Route path="/portfolio">
+                            <Portfolio />
                         </Route>
                         <Route path="/contact">
                             <Contact />
@@ -50,3 +55,4 @@ class Header extends Component {
 }
 
 export default Header;
+

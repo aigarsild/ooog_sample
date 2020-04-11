@@ -1,13 +1,13 @@
 import React ,{ Component } from 'react';
 
 
-class Contact extends Component {
+class Portfolio extends Component {
     render() {
         return (
             <section className="row light-section navbar-light sticky-top">
                 <div className="container">
                     <div className="row">
-                        <h2>Contact</h2>
+                        <h2>Testimonials</h2>
                     </div>
                 </div>
             </section>
@@ -15,4 +15,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default Portfolio;
