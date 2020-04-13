@@ -43,7 +43,7 @@ class Portfolio extends Component {
                         <div className="card border-0 shadow">
                             <img src={taishooldusImg} className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h2 className="card-title font-weight-bold">Täishooldus 65€</h2>
+                                <h2 className="card-title font-weight-bold">Täishooldus 75€</h2>
                                 <div className="card-text font-weight-light">
                                     <ul className="list-unstyled">
                                     <span className="font-weight-bold mb-2">Täishoolduse korral lisandub lihthooldusele:</span>
