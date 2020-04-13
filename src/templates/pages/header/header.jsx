@@ -14,7 +14,7 @@ class Header extends Component {
                 <header className="row light-section navbar-light sticky-top">
                     <div className="container">
                         <div className="row">
-                            <p className="col navbar-brand pb-0 font-weight-bold">RATTAHOOLDUS.</p>
+                            <p className="col navbar-brand pb-0 font-weight-bold">kauplusrattapood.</p>
                             <nav className="col nav-wrap">
                                 <ul className="nav justify-content-end">
                                     <li className="nav-item">
