@@ -9,6 +9,10 @@ body {
   background: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #000;
 }
@@ -19,4 +23,20 @@ a {
   @include media-breakpoint-up(md) {
     display: block;
   }
+}
+
+.card {
+  background-color: #cc00ff;
+  img {
+    opacity: 0.8;
+  }
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #202429;
+  color: #fff;
 }
