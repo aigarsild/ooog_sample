@@ -14,20 +14,20 @@ class Header extends Component {
                 <header className="row light-section navbar-light sticky-top">
                     <div className="container">
                         <div className="row">
-                            <p className="col navbar-brand pb-0 font-weight-bold">kauplusrattapood.</p>
+                            <Link to="/" className="col navbar-brand pb-0 font-weight-bold">Kauplusrattapood</Link>
                             <nav className="col nav-wrap">
                                 <ul className="nav justify-content-end">
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">pealeht</Link>
+                                        <Link className="nav-link" to="/">Pealeht</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/about">meist</Link>
+                                        <Link className="nav-link" to="/about">Meist</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/portfolio">hinnakiri</Link>
+                                        <Link className="nav-link" to="/portfolio">Hinnakiri</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/contact">kontakt</Link>
+                                        <Link className="nav-link" to="/contact">Kontakt</Link>
                                     </li>
                                 </ul>
                             </nav>

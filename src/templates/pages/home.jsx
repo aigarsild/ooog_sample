@@ -11,17 +11,32 @@ class Home extends Component {
         return (
         
             <section>
-                <section className="d-flex align-content-center flex-wrap min-vh-100">
-                    <h1 className="display-4 text-center w-100 font-weight-bold mb-4">Lepi aeg kokku ja me tuleme hooldame/parandame teie ratta.</h1>
+                <section className="row slider d-flex align-content-center flex-wrap min-vh-100">
+                    <h1 className="display-4 text-center w-100 font-weight-bold mb-4">Mobiilne rattahooldus / parandus</h1>
                     <div className="lead text-center w-100">
                         Aja saate kokkuleppida kirjutades
                         <a href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a> 
                         või helistades <a href="tel:+37256861763">56 86 17 63</a> 
-                        <p className="lead text-center w-100">Oleme varsti avamas füüsilist poodi Laagri keskuses.</p>
+                        <p className="lead text-center w-100">Avame varsti füüsilise poe Laagris. Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani. </p>
                     </div>
                     
                     <div className="w-100 text-center">
-                        <a href="#hinnakiri" className="btn btn-dark font-weight-bold m-4 pt-3 pb-3 pl-5 pr-5">vaata hinnakirja</a>
+                        <a href="#hinnakiri" className="shadow btn btn-dark font-weight-bold m-4 pt-3 pb-3 pl-5 pr-5">vaata hinnakirja</a>
+                    </div>
+                </section>
+
+                <section className="row slider d-flex align-content-center flex-wrap min-vh-100">
+                    <div className="container">
+                        <div className="row">
+                        <h2 className="display-4 text-center w-100 font-weight-bold mb-4">Oleme mobiilsed ja kontaktivabad </h2>
+                        <div className="lead text-center w-100">
+                        Avame varsti füüsilise hoolduskeskuse Laagris. 
+                        Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani. 
+                        Üleandmine võib olla ka täiesti kontaktivaba. 
+                        Näiteks: lepime kellaaja kokku ja jäta oma ratas maja ette või värava taha. 
+                        Peale rattahooldust lepime aja kokku ja toome hooldatud jalgratta kokku lepitud kohta tagasi.
+                        </div>
+                        </div>
                     </div>
                 </section>
                 
@@ -47,6 +62,7 @@ class Home extends Component {
                                            <li className="mb-2">lihthoolduse teostame kohapeal</li>
                                            <li className="mb-2">hind ei sisalda varuosi</li>
                                         </ul>
+                                        <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
                                     </div>
                                 </div>
                         </div>
@@ -63,6 +79,7 @@ class Home extends Component {
                                        <li className="mb-2">kõikide vahetamist vajavate osade vahetus</li>
                                        <li className="mb-2">hind ei sisalda varuosi</li>
                                     </ul>
+                                    <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
                                 </div>
                             </div>
                         </div>
@@ -79,6 +96,7 @@ class Home extends Component {
                                            <li className="mb-2">Töökoja töötund 35€</li>
                                            <li className="mb-2">Väiksemad tööd nagu sisekummi vahetus jms lisandub väljasõidu hind 10€</li>
                                         </ul>
+                                        <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
                                     </div>
                                 </div>
                         </div>
@@ -91,7 +109,7 @@ class Home extends Component {
                 <section className="d-flex align-content-center flex-wrap min-vh-100">
                     <div className="container">
                         <div className="row">
-                        <h2 className="display-5 font-weight-bold text-center w-100">Taastame ka ise rattaid müügiks. Varsti saab ka vaatama tulla. Lisainfo saamiseks kirjutage
+                        <h2 className="slogan display-5 font-weight-bold text-center w-100">Taastame ka ise rattaid müügiks. Varsti saab ka vaatama tulla. Lisainfo saamiseks kirjutage
                         <a className="font-weight-bold" href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a> 
                         või helistage <a className="font-weight-bold" href="tel:+37256861763">56 86 17 63</a>
                     </h2>
