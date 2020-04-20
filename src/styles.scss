@@ -17,10 +17,14 @@ html {
   word-break: break-word;
 }
 
+.prices-section {
+  position: relative;
+}
+
 .slider {
   &::after {
     content: '';
-    background-image: url('assets/img/bike.background.png');
+    background-image: url('assets/img/bikebackground.jpg');
     background-position: center bottom;
     opacity: 0.3;
     top: 0;
@@ -58,13 +62,52 @@ a {
 
 .card {
   background-color: #b1d0ff;
+  height: 100%;
+
+  &-body {
+    background-color: #fff;
+    position: relative;
+    .btn {
+      position: absolute;
+      left: 1.25rem;
+      bottom: 0;
+      right: 1.25rem;
+    }
+  }
+
+  &-text {
+    margin: 0 0 70px 0;
+  }
+
   img {
     opacity: 0.5;
   }
 }
 
-.card-body {
-  background-color: #fff;
+.price-form.modal {
+  display: block;
+  &::after {
+    content: '';
+    background-color: #343a40;
+    opacity: 0.5;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.img-wrap {
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  background-color: #b1d0ff;
+  img {
+    min-height: 100%;
+  }
 }
 
 .footer {
@@ -75,5 +118,10 @@ a {
 @include media-breakpoint-down(md) {
   h1.display-4, h2.display-4 {
     font-size: 2rem;
+  }
+
+  .img-wrap {
+    width: 100%;
+    height: 20%;
   }
 }

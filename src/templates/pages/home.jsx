@@ -1,118 +1,60 @@
-import React ,{ Component } from 'react';
-
-import lihthooldusImg from '../../assets/img/bike.png';
-import taishooldusImg from '../../assets/img/bike2.png';
-import toodImg from '../../assets/img/tools.png';
-
+import React, { Component } from 'react';
+import Prices from '../../components/pricesComponent'
 
 class Home extends Component {
 
     render() {
         return (
-        
+
             <section>
                 <section className="row slider d-flex align-content-center flex-wrap min-vh-100">
-                    <h1 className="display-4 text-center w-100 font-weight-bold mb-4">Mobiilne rattahooldus / parandus</h1>
+                    <h1 className="display-4 text-center w-100 font-weight-bold mb-4">Mobiilne ratta hooldus ja parandus</h1>
                     <div className="lead text-center w-100">
-                        Aja saate kokkuleppida kirjutades
-                        <a href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a> 
-                        või helistades <a href="tel:+37256861763">56 86 17 63</a> 
+                        Aja saab kokkuleppida kirjutades
+                        <a href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a>
+                        või kirjutades <a href="#hinnakiri">hinnakirja all</a>
                         <p className="lead text-center w-100">Avame varsti füüsilise poe Laagris. Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani. </p>
                     </div>
-                    
+
                     <div className="w-100 text-center">
-                        <a href="#hinnakiri" className="shadow btn btn-dark font-weight-bold m-4 pt-3 pb-3 pl-5 pr-5">vaata hinnakirja</a>
+                        <a href="#hinnakiri" className="shadow btn btn-dark font-weight-bold m-4 pt-3 pb-3 pl-5 pr-5">Vaata hinnakirja</a>
                     </div>
                 </section>
 
                 <section className="row slider d-flex align-content-center flex-wrap min-vh-100">
                     <div className="container">
                         <div className="row">
-                        <h2 className="display-4 text-center w-100 font-weight-bold mb-4">Oleme mobiilsed ja kontaktivabad </h2>
-                        <div className="lead text-center w-100">
-                        Avame varsti füüsilise hoolduskeskuse Laagris. 
-                        Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani. 
-                        Üleandmine võib olla ka täiesti kontaktivaba. 
-                        Näiteks: lepime kellaaja kokku ja jäta oma ratas maja ette või värava taha. 
-                        Peale rattahooldust lepime aja kokku ja toome hooldatud jalgratta kokku lepitud kohta tagasi.
-                        </div>
+                            <h2 className="display-4 text-center w-100 font-weight-bold mb-4">On jalgrattahooaeg! Kõik ratturid on juba õues</h2>
+                            <div className="lead text-center w-100">
+                                Sõidetakse metsas, poes ja niisama aleviku vahel.
+                                Lapsed tiirutavad peale koolipäeva, et saaks koolimõtted peast ning kohtuda mõne sõbraga, et koos sõita ja seiklusi otsida.
+                                Noored kasutavad ratast kui tavalist sõiduvahendit, millega oma peika või pruta juurde reisida.
+                                Vahel on kondimootoriga ka hea raamatukokku minna.
+                                Ja tööinimesed naudivad raudhobuga sõitu peale väljakutsuvat tööpäeva. Lõõgastav matk looduses, mmm!
+                            <p>
+                                Jalgratas on igapäevane asi. Nii nagu hooldad ennast ja kõiki asju, mida kasutad iga päev, tuleb hooldada ka ratast.
+                            </p>
+                                <p>Laagri rattapood hooldab meeleldi sinu ratast.</p>
+                            </div>
                         </div>
                     </div>
                 </section>
-                
-                <section className="light-section d-flex align-content-center flex-wrap min-vh-100 row">
+
+                <section className="prices-section light-section d-flex align-content-center flex-wrap min-vh-100 row">
                     <div className="container" id="hinnakiri">
-                    <h1 className="display-4 text-center w-100 font-weight-bold mb-5">Hinnakiri.</h1>
-                        <div className="row">
-                        <div className="col mb-4">
-                        <div className="card border-0 shadow">
-                            <img src={lihthooldusImg} className="card-img-top" alt="" />
-                                <div className="card-body">
-                                    <h2 className="card-title font-weight-bold">Lihthooldus 35€</h2>
-                                    <div className="card-text font-weight-light">
-                                        <ul className="list-unstyled">
-                                            <span className="font-weight-bold mb-2">Lihthooldus sisaldab:</span>
-                                           <li className="mb-2">käikude, koonuste, pidurite, kaelakausside reguleerimine</li>
-                                           <li className="mb-2">jooksude rihtimine</li>
-                                           <li className="mb-2">hüdraulilistel piduritel vajadusel õli lisamine</li>
-                                           <li className="mb-2">keti õlitamine</li>
-                                           <li className="mb-2">kummide pumpamine</li>
-                                           <li className="mb-2">lihtsamate osade vahetamine (kett, piduriklotsid, tross jne)</li>
-                                           <li className="mb-2">edasise hoolduse soovitused</li>
-                                           <li className="mb-2">lihthoolduse teostame kohapeal</li>
-                                           <li className="mb-2">hind ei sisalda varuosi</li>
-                                        </ul>
-                                        <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    <div className="col mb-4">
-                        <div className="card border-0 shadow">
-                            <img src={taishooldusImg} className="card-img-top" alt="" />
-                            <div className="card-body">
-                                <h2 className="card-title font-weight-bold">Täishooldus 75€</h2>
-                                <div className="card-text font-weight-light">
-                                    <ul className="list-unstyled">
-                                    <span className="font-weight-bold mb-2">Täishoolduse korral lisandub lihthooldusele:</span>
-                                       <li className="mb-2">rummude, kaelakausside ja keskjooksu puhastamine/määrimine</li>
-                                       <li className="mb-2">kõikide vahetamist vajavate osade vahetus</li>
-                                       <li className="mb-2">hind ei sisalda varuosi</li>
-                                    </ul>
-                                    <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col mb-4">
-                        <div className="card border-0 shadow">
-                            <img src={toodImg} className="card-img-top" alt="" />
-                                <div className="card-body">
-                                    <h2 className="card-title font-weight-bold">Ülejäänud tööd</h2>
-                                    <div className="card-text font-weight-light">
-                                        <ul className="list-unstyled">
-                                           <li className="mb-2">Rattapesu 15 - 25€</li>
-                                           <li className="mb-2">Ekspress hooldus 95€</li>
-                                           <li className="mb-2">Töökoja töötund 35€</li>
-                                           <li className="mb-2">Väiksemad tööd nagu sisekummi vahetus jms lisandub väljasõidu hind 10€</li>
-                                        </ul>
-                                        <p className="w-100 shadow btn btn-dark font-weight-bold pt-3 pb-3 pl-5 pr-5">Telli pakett</p>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    
-                        </div>
+                        <Prices></Prices>
                     </div>
                 </section>
 
                 <section className="d-flex align-content-center flex-wrap min-vh-100">
                     <div className="container">
                         <div className="row">
-                        <h2 className="slogan display-5 font-weight-bold text-center w-100">Taastame ka ise rattaid müügiks. Varsti saab ka vaatama tulla. Lisainfo saamiseks kirjutage
-                        <a className="font-weight-bold" href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a> 
-                        või helistage <a className="font-weight-bold" href="tel:+37256861763">56 86 17 63</a>
-                    </h2>
+                            <h2 className="slogan display-5 font-weight-bold text-center w-100">Taastame ka ise rattaid müügiks. Varsti saab ka vaatama tulla.</h2>
+                            <div className="lead text-center w-100">
+                                Lisainfo saamiseks kirjuta
+                                <a href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a>
+                                või helista <a href="tel:+37256861763">56 86 17 63</a>
+                            </div>
                         </div>
                     </div>
                 </section>

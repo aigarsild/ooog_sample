@@ -1,9 +1,10 @@
 import React ,{ Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import About from '../about';
 import Home from '../home';
 import Contact from '../contact';
 import Portfolio from '../portfolio';
+import Success from '../success';
 
 class Header extends Component {
 
@@ -35,7 +36,7 @@ class Header extends Component {
                     </div>
                 </header>
 
-                    <Switch>
+                <Switch>
                         <Route path="/about">
                             <About />
                         </Route>
@@ -44,6 +45,9 @@ class Header extends Component {
                         </Route>
                         <Route path="/contact">
                             <Contact />
+                        </Route>
+                        <Route path="/success">
+                            <Success />
                         </Route>
                         <Route path="/">
                             <Home />
