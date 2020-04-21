@@ -38,7 +38,7 @@ class Header extends Component {
                                 <div className="hamburger-icon"></div>
                             </div>
                             
-                                <nav className={this.state.showNav ? 'show-nav' : 'col nav-wrap'}>
+                                <nav className={this.state.showNav ? 'show-nav col' : 'col nav-wrap'}>
                                     <ul className="nav justify-content-end">
                                         <li className="nav-item">
                                             <Link onClick={this.handleClick.bind(this)}  className="nav-link" to="/">Pealeht</Link>
