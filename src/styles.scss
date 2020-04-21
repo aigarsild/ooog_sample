@@ -55,7 +55,7 @@ a {
 .nav-wrap {
   display: none;
   
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     display: block;
   }
 }
@@ -115,6 +115,10 @@ a {
   color: #fff;
 }
 
+.hamburger {
+  display: none;
+}
+
 @include media-breakpoint-down(md) {
   h1.display-4, h2.display-4 {
     font-size: 2rem;
@@ -123,5 +127,115 @@ a {
   .img-wrap {
     width: 100%;
     height: 20%;
+  }
+
+  .hamburger {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0.5rem 15px;
+    position: relative;
+    transition: all 0.2s;
+    z-index: 1;
+
+    &.active {
+      .hamburger-icon {
+        height: 0;
+        width: 100%;
+        background: #202429;
+        position: absolute;
+        top: calc(50% - 1px);
+        transition: all 0.2s;
+  
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: #ffffff;
+          position: absolute;
+          top: 0;
+          transform: rotate(45deg);
+          transition: all 0.2s;
+        }
+  
+        &::before {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: #ffffff;
+          position: absolute;
+          bottom: -2px;
+          transform: rotate(-45deg);
+          transition: all 0.2s;
+        }
+      }
+    }
+
+    &-icon {
+      height: 2px;
+      width: 100%;
+      background: #202429;
+      position: absolute;
+      top: calc(50% - 1px);
+
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #202429;
+        position: absolute;
+        top: -10px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #202429;
+        position: absolute;
+        bottom: -10px;
+      }
+    }
+  }
+
+  .show-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+
+    &::after {
+      content: '';
+      background: #202429;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .justify-content-end {
+      justify-content: center !important;
+      flex-direction: column;
+      min-height: 100vh;
+      li.nav-item {
+        text-align: center;
+        padding: 10px 0;
+    }
+    }
   }
 }
