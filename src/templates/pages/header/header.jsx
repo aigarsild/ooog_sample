@@ -37,46 +37,45 @@ class Header extends Component {
                             <div onClick={this.handleClick.bind(this)} className={this.state.showNav ? 'active hamburger' : 'hamburger'}>
                                 <div className="hamburger-icon"></div>
                             </div>
-                            
-                                <nav className={this.state.showNav ? 'show-nav col' : 'col nav-wrap'}>
-                                    <ul className="nav justify-content-end">
-                                        <li className="nav-item">
-                                            <Link onClick={this.handleClick.bind(this)}  className="nav-link" to="/">Pealeht</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/about">Meist</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/portfolio">Hinnakiri</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/contact">Kontakt</Link>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            
+
+                            <nav className={this.state.showNav ? 'show-nav col' : 'col nav-wrap'}>
+                                <ul className="nav justify-content-end">
+                                    <li className="nav-item">
+                                        <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/">Pealeht</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/about">Meist</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/portfolio">Hinnakiri</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link onClick={this.handleClick.bind(this)} className="nav-link" to="/contact">Kontakt</Link>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </header>
 
                 <ScrollToTop>
-                <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/portfolio">
-                        <Portfolio />
-                    </Route>
-                    <Route path="/contact">
-                        <Contact />
-                    </Route>
-                    <Route path="/success">
-                        <Success />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
+                    <Switch>
+                        <Route path="/about" component={About}>
+                            <About />
+                        </Route>
+                        <Route path="/portfolio" component={Portfolio}>
+                            <Portfolio />
+                        </Route>
+                        <Route path="/contact" component={Contact}>
+                            <Contact />
+                        </Route>
+                        <Route path="/success" component={Success}>
+                            <Success />
+                        </Route>
+                        <Route path="/" component={Home}>
+                            <Home />
+                        </Route>
+                    </Switch>
                 </ScrollToTop>
             </Router>
         );
