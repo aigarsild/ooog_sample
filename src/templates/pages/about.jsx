@@ -11,6 +11,7 @@ class About extends Component {
                     <meta charSet="utf-8" />
                     <title>Jalgratta poe meeskond</title>
                     <link rel="canonical" href="https://kauplusrattapood.ee/about" />
+                    <meta name="description" content="Jalgrattapoe tiim koosneb kogenud ratturitest" />
                 </Helmet>
                 <div className="container">
                     <div className="row">
@@ -24,7 +25,7 @@ class About extends Component {
                             <p className="mb-5">Hoolitseme su ratta eest, et su ratas saaks sinu eest hoolitseda.</p>
 
                             <h2 className="display-5 text-center w-100 font-weight-bold mb-5">Oleme mobiilsed ja kontaktivabad</h2>
-                            <p>Avame varsti füüsilise töökoja Laagris. Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani.</p>
+                            <p>Avame varsti füüsilise töökoja Laagris.</p>
                             <p className="mb-5">
                                 Üleandmine võib olla ka täiesti kontaktivaba. Näiteks: lepime kellaaja kokku ja jäta oma ratas maja ette või värava taha. Peale rattahooldust lepime aja kokku ja toome hooldatud jalgratta kokku lepitud kohta tagasi.
                             </p>

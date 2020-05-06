@@ -21,7 +21,7 @@ class Home extends Component {
                         Aja saab kokkuleppida kirjutades
                         <a href="mailto:laagri.rattahooldus@gmail.com?Subject=Rattahooldus%20lehelt" target="_top"> laagri.rattahooldus@gmail.com </a>
                         või kirjutades <a href="#hinnakiri">hinnakirja all</a>
-                        <p className="lead text-center w-100">Avame varsti füüsilise poe Laagris. Kuni avamiseni oleme mobiilsed - tuleme ise sinu rattani. </p>
+                        <p className="lead text-center w-100">Avame varsti füüsilise poe Laagris.</p>
                     </div>
 
                     <div className="w-100 text-center">
