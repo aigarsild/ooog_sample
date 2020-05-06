@@ -60,19 +60,19 @@ class Header extends Component {
 
                 <ScrollToTop>
                     <Switch>
-                        <Route path="/about" component={About}>
+                        <Route path="/about">
                             <About />
                         </Route>
-                        <Route path="/portfolio" component={Portfolio}>
+                        <Route path="/portfolio">
                             <Portfolio />
                         </Route>
-                        <Route path="/contact" component={Contact}>
+                        <Route path="/contact">
                             <Contact />
                         </Route>
-                        <Route path="/success" component={Success}>
+                        <Route path="/success">
                             <Success />
                         </Route>
-                        <Route path="/" component={Home}>
+                        <Route path="/">
                             <Home />
                         </Route>
                     </Switch>

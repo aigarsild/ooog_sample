@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import wheelImg from '../../assets/img/bikepic.jpeg';
+import { Helmet } from 'react-helmet';
 
 
 class About extends Component {
     render() {
         return (
             <section className="light-section d-flex align-content-center flex-wrap min-vh-100">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Jalgratta poe meeskond</title>
+                    <link rel="canonical" href="https://kauplusrattapood.ee/about" />
+                </Helmet>
                 <div className="container">
                     <div className="row">
                         <div className="lead w-100">

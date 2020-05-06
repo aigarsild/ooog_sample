@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Prices from '../../components/pricesComponent'
+import Prices from '../../components/pricesComponent';
+import { Helmet } from 'react-helmet';
+
 
 class Home extends Component {
 
@@ -7,6 +9,12 @@ class Home extends Component {
         return (
 
             <section>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Jalgratta hooldus ja parandus</title>
+                    <link rel="canonical" href="https://kauplusrattapood.ee/" />
+                    <meta name="description" content="Mobiilne jalgratta hooldus ja parandus, lepime aja kokku ja tuleme teie rattale järgi" />
+                </Helmet>
                 <section className="row slider d-flex align-content-center flex-wrap min-vh-100">
                     <h1 className="display-4 text-center w-100 font-weight-bold mb-4">Mobiilne ratta hooldus ja parandus</h1>
                     <div className="lead text-center w-100">
@@ -32,7 +40,7 @@ class Home extends Component {
                                 Vahel on kondimootoriga ka hea raamatukokku minna.
                                 Ja tööinimesed naudivad raudhobuga sõitu peale väljakutsuvat tööpäeva. Lõõgastav matk looduses, mmm!
                             <p>
-                                Jalgratas on igapäevane asi. Nii nagu hooldad ennast ja kõiki asju, mida kasutad iga päev, tuleb hooldada ka ratast.
+                                    Jalgratas on igapäevane asi. Nii nagu hooldad ennast ja kõiki asju, mida kasutad iga päev, tuleb hooldada ka ratast.
                             </p>
                                 <p>Laagri rattapood hooldab meeleldi sinu ratast.</p>
                             </div>

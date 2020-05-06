@@ -1,11 +1,18 @@
 import React ,{ Component } from 'react';
 import Form from '../../components/formComponent'
+import { Helmet } from 'react-helmet';
 
 
 class Contact extends Component {
     render() {
         return (
             <section className="light-section d-flex align-content-center flex-wrap min-vh-100 row">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Jalgratta hooldus ja parandus kontakt</title>
+                    <link rel="canonical" href="https://kauplusrattapood.ee/contact" />
+                    <meta name="description" content="Lepime aja kokku ja tuleme teie rattale järgi" />
+                </Helmet>
                     <div className="container">
                         <div className="row">
                             <div className="lead text-center w-100">
